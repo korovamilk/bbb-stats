@@ -1,5 +1,7 @@
 # bbb-stats (BigBlueButton simple statistics dashboard)
 
+![image](https://user-images.githubusercontent.com/1224883/82800772-84d66d80-9e7c-11ea-9d64-319d640a465f.png)
+
 Very basic html dashboard to display currently running BigBlueButton meetings and connected users on your bbb server.  
   
 Requires: access to bigbluebutton getMeetingsAPI, curl and xsltproc
@@ -31,5 +33,3 @@ Browse your BigBlueButton dashboard:
 ```
 https://bigbluebutton.example.com/stats
 ```
-
-![image](https://user-images.githubusercontent.com/1224883/82800772-84d66d80-9e7c-11ea-9d64-319d640a465f.png)
