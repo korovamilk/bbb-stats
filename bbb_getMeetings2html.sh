@@ -2,7 +2,7 @@
 # BigBlueButton getMeetings2html
 # outputs a readable html from bbb meetings xml API
 # add to crontab and execute every minute or so
-# DO NOT place this script under /var/www (exposes API)
+# DO NOT place this script under /var/www/bigbluebutton (exposes API)
 #
 # v.20200525 Marco Agate ~ https://github.com/korovamilk/bbb-stats
 
