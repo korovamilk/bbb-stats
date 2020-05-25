@@ -32,3 +32,5 @@ Browse your BigBlueButton dashboard:
 ```
 https://bigbluebutton.example.com/stats
 ```
+
+![image](https://user-images.githubusercontent.com/1224883/82800772-84d66d80-9e7c-11ea-9d64-319d640a465f.png)
