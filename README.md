@@ -2,4 +2,3 @@
 BigBlueButton simple stats dashboard  
   
 .
-
