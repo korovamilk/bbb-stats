@@ -1,9 +1,8 @@
-# bbb-stats
-BigBlueButton simple stats dashboard  
+# bbb-stats (BigBlueButton simple statistics dashboard)
 
-Very basic html dashboard to display all currently running BigBlueButton meetings.  
+Very basic html dashboard to display currently running BigBlueButton meetings and connected users on your bbb server.  
   
-Requires: curl and xsltproc  
+Requires: access to bigbluebutton getMeetingsAPI, curl and xsltproc
 
 Customize the  bbb_getMeetings2html.sh  shell script with your API endpoint:
 
