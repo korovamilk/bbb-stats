@@ -27,8 +27,8 @@
     <tr>
       <td style="padding: 5px"><xsl:value-of select="meetingName"/></td>
       <td style="padding: 5px; text-align:center"><xsl:value-of select="participantCount"/></td>
- <td style="padding: 5px; text-align:center"><xsl:for-each select="attendees/attendee[role='MODERATOR']"><xsl:value-of select="fullName"/></xsl:for-each></td>
- <td style="padding: 5px; text-align:center"><xsl:for-each select="attendees/attendee[role!='MODERATOR']"><xsl:value-of select="fullName"/><xsl:if test="not(position()=last())"><xsl:text>, </xsl:text></xsl:if></xsl:for-each></td>
+      <td style="padding: 5px; text-align:center;color:#e4000e"><xsl:for-each select="attendees/attendee[role='MODERATOR']"><xsl:value-of select="fullName"/><xsl:if test="not(position()=last())"><xsl:text>, </xsl:text></xsl:if></xsl:for-each></td>
+      <td style="padding: 5px; text-align:center"><xsl:for-each select="attendees/attendee[role!='MODERATOR']"><xsl:value-of select="fullName"/><xsl:if test="not(position()=last())"><xsl:text>, </xsl:text></xsl:if></xsl:for-each></td>
     </tr>
     </xsl:for-each>
     <tr bgcolor="#e4000e">
