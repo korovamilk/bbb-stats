@@ -4,8 +4,10 @@
 
 Very basic html dashboard to display currently running BigBlueButton meetings and connected users on your bbb server.  
   
-Requires: access to bigbluebutton getMeetings API, curl and xsltproc
-  
+Requires: access to bigbluebutton getMeetings API, curl, xsltproc and apache2-utils (for HTTP basic auth password)
+```
+apt-get install curl xsltproc apache2-utils
+```
 
 Customize the  bbb_getMeetings2html.sh  shell script with your API endpoint:
 
@@ -29,8 +31,31 @@ Add the script to cron (eg. every minute)
 # m h  dom mon dow   command
 * * * * * /usr/local/bin/bbb_getMeetings2html.sh 
 ```
- 
-Browse your BigBlueButton dashboard:
+
+Create HTTP basic auth password to protect access to stats page:
+```
+htpasswd -c /etc/nginx/.htpasswd bbb-status-user
+```
+
+Add the location directive for /stats to your Nginx web server  (/etc/nginx/sites-available/bigbluebutton)
+
+```
+location /stats {
+    auth_basic "BBB Stats - Passwortabfrage";
+    auth_basic_user_file /etc/nginx/.htpasswd;
+         
+    root   /var/www/bigbluebutton;
+    index  index.html;
+}
+```
+
+Check your Nginx configuration and then reload the service:
+```
+nginx -t 
+systemctl reload nginx
+```
+
+Browse your BigBlueButton dashboard and login with user "bbb-status-user" and the password you chose:
 ```
 https://bigbluebutton.example.com/stats
 ```
