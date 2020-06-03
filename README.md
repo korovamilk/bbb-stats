@@ -1,6 +1,6 @@
 # bbb-stats (BigBlueButton simple dashboard)
 
-![image](https://user-images.githubusercontent.com/1224883/82800772-84d66d80-9e7c-11ea-9d64-319d640a465f.png)
+![image](https://user-images.githubusercontent.com/1224883/83612346-94436e00-a582-11ea-90af-35bd099c70ac.png)
 
 Very basic html dashboard to display currently running BigBlueButton meetings and connected users on your bbb server.  
   
