@@ -16,7 +16,7 @@
   <br></br>
     <p></p>
   <br></br>
-  <table style="border:0; width: auto;margin-left:auto;margin-right:auto;">
+  <table style="border:0;width:auto;max-width:800px;margin-left:auto;margin-right:auto;">
     <tr bgcolor="#e4000e">
       <th style="padding: 5px;text-align:center;font-size:20px;color:#fff;">Raum</th>
       <th style="padding: 5px;text-align:center;font-size:20px;color:#fff;">Teilnehmer</th>
