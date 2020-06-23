@@ -22,6 +22,7 @@
       <th style="padding: 5px;text-align:center;font-size:20px;color:#fff;">Teilnehmer</th>
       <th style="padding: 5px;text-align:center;font-size:20px;color:#fff;">Moderator</th>
       <th style="padding: 5px;text-align:center;font-size:20px;color:#fff;">Gäste</th>
+      <th style="padding: 5px;text-align:center;font-size:20px;color:#fff;">Konferenz beenden</th>
     </tr>
     <xsl:for-each select="meetings/meeting">
     <tr>
@@ -29,11 +30,13 @@
       <td style="padding: 5px; text-align:center"><xsl:value-of select="participantCount"/></td>
       <td style="padding: 5px; text-align:center;color:#e4000e"><xsl:for-each select="attendees/attendee[role='MODERATOR']"><xsl:value-of select="fullName"/><xsl:if test="not(position()=last())"><xsl:text>, </xsl:text></xsl:if></xsl:for-each></td>
       <td style="padding: 5px; text-align:center"><xsl:for-each select="attendees/attendee[role!='MODERATOR']"><xsl:value-of select="fullName"/><xsl:if test="not(position()=last())"><xsl:text>, </xsl:text></xsl:if></xsl:for-each></td>
+      <td style="padding: 5px">___<xsl:value-of select="meetingID"/>;<xsl:value-of select="moderatorPW"/>___</td>
     </tr>
     </xsl:for-each>
     <tr bgcolor="#e4000e">
       <td/>
       <td style="padding: 5px;text-align:center;font-size:20px;color:#fff"><b><xsl:value-of select="sum(meetings/meeting/participantCount)"/></b></td>
+      <td/>
       <td/>
       <td/>
     </tr>
