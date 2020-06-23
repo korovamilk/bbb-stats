@@ -5,7 +5,7 @@
 Very basic html dashboard to display currently running BigBlueButton meetings and connected users on your bbb server.  
 It also provides a link to kill the conference rooms (to avoid accidental room killings, you have to copy the link and paste in browser)
   
-Requires: access to bigbluebutton getMeetings API, curl, xsltproc and apache2-utils (for HTTP basic auth password)
+Requires: access to BigBlueButton Secret and API, curl, xsltproc and apache2-utils (for HTTP basic auth password)
 ```
 apt-get install curl xsltproc apache2-utils
 ```
@@ -27,12 +27,7 @@ Copy the "Secret" and paste in the script, eg:
 sharedSecret="XXXXYYYYZZZZ"
 ```
 
-Navigate to the API-MATE link:   
-```
-https://mconf.github.io/api-mate/#server=https://bigbluebutton.example.com/bigbluebutton/&sharedSecret=XXXXYYYYZZZZ
-```
-
-Copy the "getMeetings" URL from API-MATE, and paste in the script, eg:
+Navigate to the API-MATE link above and copy the "getMeetings" URL. Paste it in the script, eg:
 ```
 API_ENDPOINT="https://bigbluebutton.example.com/bigbluebutton/api/getMeetings?checksum=ZZZYYYXXX"
 ```
