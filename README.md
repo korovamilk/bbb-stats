@@ -3,6 +3,7 @@
 ![image](https://user-images.githubusercontent.com/1224883/85375220-45ac4280-b536-11ea-8dc0-2ad319976190.png)
 
 Very basic html dashboard to display currently running BigBlueButton meetings and connected users on your bbb server.  
+It also provides a link to kill the conference rooms (to avoid accidental room killings, you have to copy the link and paste in browser)
   
 Requires: access to bigbluebutton getMeetings API, curl, xsltproc and apache2-utils (for HTTP basic auth password)
 ```
