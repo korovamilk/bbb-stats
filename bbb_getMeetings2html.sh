@@ -16,7 +16,7 @@ sharedSecret="XXXXYYYYZZZZ"
 # copy and then enter here the "getMeetings" URL, eg:
 API_ENDPOINT="https://bigbluebutton.example.com/bigbluebutton/api/getMeetings?checksum=ZZZYYYXXX"
 # enter your BigBlueButton fully qualified domain name, eg: 
-myBBB="bbb.example.com"
+myBBB="bigbluebutton.example.com"
 
 STYLE="/var/www/bigbluebutton/stats/style.xsl"
 INPUT="/tmp/bbb_stats_input.xml"
